@@ -1,0 +1,12 @@
+.text{
+    color: orange;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+
+.text-align{
+    text-align: left;
+    margin-left: 250px;
+    margin-top: 30px;
+}
