@@ -2,6 +2,7 @@ import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
+import Cart from '../Cart/Cart';
 import './Active.css';
 
 
@@ -17,7 +18,7 @@ const Active= () => {
   }, []);
 
   const handleAddToCart = (activitie) =>{
-        console.log(activitie);
+        // console.log(activitie);
         const newCart = [...cart, activitie];
         setCart(newCart);
      }
@@ -38,7 +39,7 @@ const Active= () => {
 
 
 
-       
+
 
     <div className='cart-container'>
       <div className='person'>
@@ -65,7 +66,12 @@ const Active= () => {
          </div>
       </div>
       <div>
-            <h4>Add a Break</h4>
+
+
+        {/* /////////////////// */}
+
+
+        <h4>Add a Break</h4>
           <div className='time'>
            <button class="btn-time">10m</button>
            <button class="btn-time">20m</button>
@@ -75,25 +81,24 @@ const Active= () => {
            </div>
         </div>
 
-        <div>
+        {/* <div>
           <h3>Exercise Info</h3>
           <div className='time1'>
             <h4>Practice Time</h4>
-            <p className='color'>minutes</p>
+            <p className='color'> minutes</p>
             </div>
           <div className='time2'>
             <h4>Interval Time</h4>
-            <p className='color'>minutes</p>
+            <p className='color'> minutes</p>
           </div>
          
-        </div>
-          <div>
+        </div> */}
+          {/* <div>
             <button className='btn-last'>Task Completed</button>
-          </div>
+          </div> */}
 
-            <div className='sticky'>
-              <h3>select activitie</h3>
-                <p>Selected Items: {cart.length}</p>
+            <div className='cart-container'>
+                <Cart cart={cart}></Cart>
             </div>
             <div>
              <button>Answer</button>
