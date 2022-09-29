@@ -2,7 +2,6 @@ import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
-import Interaction from '../Interaction/Interaction';
 import './Active.css';
 
 
@@ -37,6 +36,10 @@ const Active= () => {
           }
        </div>
 
+
+
+       
+
     <div className='cart-container'>
       <div className='person'>
       <img  src="/images/profile.jpg" alt=''></img>
@@ -63,11 +66,12 @@ const Active= () => {
       </div>
       <div>
             <h4>Add a Break</h4>
-           <div className='time'>
-              <h3>10m</h3>
-              <h3>20m</h3>
-              <h3>30m</h3>
-              <h3>40m</h3>
+          <div className='time'>
+           <button class="btn-time">10m</button>
+           <button class="btn-time">20m</button>
+           <button class="btn-time">30m</button>
+           <button class="btn-time">40m</button>
+
            </div>
         </div>
 
@@ -87,9 +91,13 @@ const Active= () => {
             <button className='btn-last'>Task Completed</button>
           </div>
 
-
-        <h3>select activitie</h3>
-        <p>Selected Items: {cart.length}</p>
+            <div className='sticky'>
+              <h3>select activitie</h3>
+                <p>Selected Items: {cart.length}</p>
+            </div>
+            <div>
+             <button>Answer</button>
+            </div>
       </div>
     </div>
 
