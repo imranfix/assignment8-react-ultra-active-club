@@ -1,18 +1,34 @@
 import React from 'react';
+import { addToDb } from '../Storage/fakeData';
 
 const Cart = (props) => {
     const {cart} = props;
     let totalTime = 0;
-    let breakTime = 0;
+    // let breakTime = 0;
     for(const activitie of cart){
         totalTime = parseInt(totalTime + (+activitie.time));
-        breakTime = activitie.breakTime;
+        // breakTime = activitie.breakTime;
+    }
+
+    const handleAddBreak = (data)=>{
+      addToDb(data);
     }
 
 
     return (
         
-<div>
+  <div>
+    <div>
+        <h4>Add a Break</h4>
+          <div className='time'>
+           <button onClick ={()=>handleAddBreak('10')}  class="btn-time">10m</button>
+           <button onClick={()=>handleAddBreak('20')} class="btn-time">20m</button>
+           <button onClick={()=>handleAddBreak('30')} class="btn-time">30m</button>
+           <button onClick={()=>handleAddBreak ('40')} class="btn-time">40m</button>
+
+           </div>
+        </div>
+
     <div>
         <div>
           <h3>Exercise Info</h3>
@@ -23,7 +39,7 @@ const Cart = (props) => {
 
           <div className='time2'>
             <h4>Interval Time</h4>
-            <p className='color'>{breakTime} minutes</p>
+            <p className='color'>{addToDb.length} minutes</p>
           </div>
 
                 </div>

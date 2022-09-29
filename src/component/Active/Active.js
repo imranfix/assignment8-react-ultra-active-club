@@ -11,6 +11,7 @@ const Active= () => {
 
   const [cart , setCart] = useState([]);
 
+
   useEffect( ()=>{
     fetch('activities.JSON')
     .then(res => res.json())
@@ -22,6 +23,7 @@ const Active= () => {
         const newCart = [...cart, activitie];
         setCart(newCart);
      }
+
     
     
     return (
@@ -43,7 +45,7 @@ const Active= () => {
 
     <div className='cart-container'>
       <div className='person'>
-      <img  src="/images/profile.jpg" alt=''></img>
+      <img className='fit-img'  src="https://image.shutterstock.com/image-photo/portrait-young-smiling-caucasian-man-260nw-1491969899.jpg" alt=''></img>
 
         <h3>Kolim Kayro</h3>
         <h6><FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon> Dhaka, Bangladesh</h6>
@@ -65,43 +67,12 @@ const Active= () => {
               <p className='age'>Age</p>
          </div>
       </div>
-      <div>
-
-
-        {/* /////////////////// */}
-
-
-        <h4>Add a Break</h4>
-          <div className='time'>
-           <button class="btn-time">10m</button>
-           <button class="btn-time">20m</button>
-           <button class="btn-time">30m</button>
-           <button class="btn-time">40m</button>
-
-           </div>
-        </div>
-
-        {/* <div>
-          <h3>Exercise Info</h3>
-          <div className='time1'>
-            <h4>Practice Time</h4>
-            <p className='color'> minutes</p>
-            </div>
-          <div className='time2'>
-            <h4>Interval Time</h4>
-            <p className='color'> minutes</p>
-          </div>
-         
-        </div> */}
-          {/* <div>
-            <button className='btn-last'>Task Completed</button>
-          </div> */}
 
             <div className='cart-container'>
                 <Cart cart={cart}></Cart>
             </div>
-            <div>
-             <button>Answer</button>
+            <div> 
+              <button>Answer</button>
             </div>
       </div>
     </div>
