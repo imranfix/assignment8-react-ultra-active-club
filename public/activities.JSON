@@ -1,48 +1,48 @@
 [
 
     {
-        "act-name": "Steel Metal Bottle 1L",
+        "name": "Swimming",
+        "id": 1,
         "time": "13m",
-        "img": "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGd5bXxlbnwwfHwwfHw%3D&w=1000&q=80"
+        "img": "https://media.istockphoto.com/photos/little-boy-swimming-crawl-in-pool-picture-id1081891908?k=20&m=1081891908&s=612x612&w=0&h=0Cd0RxQfGfpXIICOp9ynXnBYrlvqk0vRa2w3N5QMzec="
       
       },
       
-    {
-        "act-name": "Steel Metal Bottle 1L",
-        "time": "46m",
-        "img": "https://img5.goodfon.com/wallpaper/nbig/f/15/back-fitness-gym-power-pose.jpg"
-      
-      },
       
     {
-        "act-name": "Steel Metal Bottle 1L",
+        "name": "Badminton",
+        "id": 3,
         "time": "23m",
-        "img": "https://images.unsplash.com/photo-1549476464-37392f717541?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGd5bXxlbnwwfHwwfHw%3D&w=1000&q=80"
+        "img": "https://www.badmintonplanet.com/wp-content/uploads/2022/06/06-19-2022-badminton-news-viktor-axelsen-indonesia-open-final.jpg"
       
       },
       
     {
-        "act-name": "Steel Metal Bottle 1L",
+        "name": "Cycling",
+        "id": 4,
         "time": "17m",
         "img": "https://i.pinimg.com/736x/fb/3f/11/fb3f11d1b87f6ca4a0b36817c680439a.jpg"
       
       },
       
     {
-        "act-name": "Steel Metal Bottle 1L",
+        "name": "Gym",
+        "id": 5,
         "time": "33m",
         "img": "https://thumbs.dreamstime.com/b/muscular-man-exercise-dumbbell-gym-asian-sit-biceps-heavy-dumbbells-both-hands-equipment-background-muscle-157495563.jpg"
       
       },
       
     {
-        "act-name": "Steel Metal Bottle 1L",
+        "name": "Running",
         "time": "45m",
+        "id": 6,
         "img": "https://media.istockphoto.com/photos/view-of-a-row-of-treadmills-in-a-gym-with-people-picture-id1183038884?k=20&m=1183038884&s=170667a&w=0&h=JsXJ87loA-238VmmPrXebPoxSHdWO1gVPQ55XsS9SHc="
       },
       
     {
-        "act-name": "Steel Metal Bottle 1L",
+        "name": "Group discussion",
+        "id": 7,
         "time": "11m",
         "img": "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396__480.jpg"
       

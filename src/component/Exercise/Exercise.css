@@ -1,0 +1,25 @@
+.exercise{
+    width: 300px;
+    height: 460px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+
+}
+.exercise img{
+    height: 286px;
+    width: 277px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.align-text{
+    margin-right: 100px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.task-name{
+    font-size: 21px;
+    line-height: 25px;
+}
