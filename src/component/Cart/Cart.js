@@ -1,3 +1,4 @@
+import Toast from '../Toast/Toast';
 import { addToDb } from '../Storage/fakeData';
 
 const Cart = (props) => {
@@ -41,14 +42,13 @@ const Cart = (props) => {
             <p className='color'>{addToDb.length} minutes</p>
           </div>
 
-                </div>
-                </div>
-                <div>
-            <button className='btn-last'>Task Completed</button>
+              </div>
           </div>
+             
 
-              <h3>select activitie cart</h3>
-                <p>Selected Items: {cart.length}</p>
+              {/* <h3>select activitie cart</h3> */}
+                <p>Exercise Count: {cart.length}</p>
+                <Toast></Toast>
         </div>
     );
 };
