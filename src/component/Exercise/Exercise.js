@@ -15,7 +15,7 @@ const {name, img, time} = props.activitie;
              <p className='font'>{name}</p>
               <p>Time: {time}</p>
              </div>
-             <button onClick={()=> props.handleAddToCart(props.activitie)} className='btn-cart'>
+             <button onClick={()=>props.handleAddToCart(props.activitie)} className='btn-cart'>
                 <p className='btn-text'>Add to Task</p>
              </button>
          </div>

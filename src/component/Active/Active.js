@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
 import Cart from '../Cart/Cart';
 import './Active.css';
+import { addToDb, getStoredCart } from '../Storage/fakeData';
 
 
 const Active= () => {
@@ -18,10 +19,32 @@ const Active= () => {
     .then(data => setActivities(data))
   }, []);
 
+
+
+  useEffect( ()=>{
+      const storedCart = getStoredCart();
+      const saveCart = [];
+      for(const time in storedCart){
+        const addedActivitie = activities.find(activitie=>activitie.time === time);
+        if(addedActivitie){
+          const quantity = storedCart[time];
+          addedActivitie.quantity = quantity;
+          saveCart.push(addedActivitie);
+            
+        }
+       
+      }
+      setCart(saveCart);
+
+  }, [activities]);
+
+
+
   const handleAddToCart = (activitie) =>{
         // console.log(activitie);
         const newCart = [...cart, activitie];
         setCart(newCart);
+        addToDb(activitie.time);
      }
 
     
