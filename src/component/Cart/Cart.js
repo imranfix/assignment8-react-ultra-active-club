@@ -10,9 +10,10 @@ const Cart = (props) => {
         // breakTime = activitie.breakTime;
     }
 
-    const handleAddBreak = (data)=>{
-      addToDb(data);
-    }
+     const handleAddBreak = (data)=>{
+       addToDb(data);
+     }
+
 
 
     return (
@@ -27,7 +28,7 @@ const Cart = (props) => {
            <button onClick={()=>handleAddBreak ('40')} class="btn-time">40m</button>
 
            </div>
-        </div>
+        </div> 
 
     <div>
         <div>
@@ -39,7 +40,7 @@ const Cart = (props) => {
 
           <div className='time2'>
             <h4>Interval Time</h4>
-            <p className='color'>{addToDb.length} minutes</p>
+            <p className='color'>{handleAddBreak} minutes</p>
           </div>
 
               </div>
@@ -47,7 +48,7 @@ const Cart = (props) => {
              
 
               {/* <h3>select activitie cart</h3> */}
-                <p>Exercise Count: {cart.length}</p>
+                {/* <p>Exercise Count: {cart.length}</p> */}
                 <Toast></Toast>
         </div>
     );

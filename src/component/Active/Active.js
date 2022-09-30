@@ -70,8 +70,8 @@ const Active= () => {
       <div className='person'>
       <img className='fit-img'  src="https://image.shutterstock.com/image-photo/portrait-young-smiling-caucasian-man-260nw-1491969899.jpg" alt=''></img>
 
-        <h3>Kolim Kayro</h3>
-        <h6><FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon> Dhaka, Bangladesh</h6>
+        <h3>Hanks Kayro</h3>
+        <h6><FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon> Halifax, Canada</h6>
       </div>
 
       <div className='profile'>
