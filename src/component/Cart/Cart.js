@@ -1,4 +1,3 @@
-import React from 'react';
 import { addToDb } from '../Storage/fakeData';
 
 const Cart = (props) => {

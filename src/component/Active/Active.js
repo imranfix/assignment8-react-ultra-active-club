@@ -71,9 +71,7 @@ const Active= () => {
             <div className='cart-container'>
                 <Cart cart={cart}></Cart>
             </div>
-            <div> 
-              <button>Answer</button>
-            </div>
+  
       </div>
     </div>
 
